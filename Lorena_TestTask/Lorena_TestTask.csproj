@@ -8,8 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DataBase\Entities\" />
-    <Folder Include="DataBase\" />
     <Folder Include="Services\" />
     <Folder Include="Tests\" />
   </ItemGroup>
