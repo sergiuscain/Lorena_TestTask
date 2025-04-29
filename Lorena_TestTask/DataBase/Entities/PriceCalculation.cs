@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace Lorena_TestTask.DataBase.Entities
 {
     public class PriceCalculation
     {
-        public Guid Id { get; set; }
-        public float OriginalPrice { get; set; }
-        public float FinalPrice { get; set; }
-        public Guid SalonId { get; set; }
+        public int Id { get; set; }
+        public decimal Price { get; set; }
+        public decimal Discount { get; set; }
+        public decimal DiscountParent { get; set; }
+        public decimal FinalPrice { get; set; }
         public DateTime CalculationDate { get; set; }
     }
 }
