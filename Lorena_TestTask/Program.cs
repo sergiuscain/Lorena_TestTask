@@ -10,8 +10,8 @@ namespace Lorena_TestTask
             Console.WriteLine("Hello, World!");
             LorenaDbContext db = new LorenaDbContext();
             db.Database.EnsureCreated();
-            db.Salons.Add(new Salon { Name = "Test", Description = "Test test", Discount = 2, IsDependence = false});
-            db.SaveChanges();
+            db.SeedData();
+
             var x = db.Salons.FirstOrDefault();
             Console.WriteLine(x.Name);
             Console.ReadKey();
