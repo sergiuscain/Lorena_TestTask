@@ -6,6 +6,7 @@ namespace Lorena_TestTask.DataBase
     public class LorenaDbContext : DbContext
     {
         public DbSet<Salon> Salons { get; set; }
+        public DbSet<PriceCalculation> PriceCalculations { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite("Data Source=salons.db"); 
